@@ -1,0 +1,45 @@
+.grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 20px;
+    padding-top: 200px;
+}
+
+.play-area {
+    grid-column: 4/10;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.building {
+    position: relative;
+    background-color: #e7e7e7;
+}
+
+.game-board {
+    /* transform: perspective(500px) rotateX(29deg); */
+    border: solid 2px;
+}
+
+.image {
+    position: absolute;
+    left: -28px;
+    top: -122px;
+    /* display: none; */
+    /* width: 370px;
+    left: -107px;
+    top: -32px; */
+}
+
+.right-column {
+    grid-column: 10/13;
+}
+
+.play-button {
+    background-color: #4caf50;
+    font-size: 16px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
